@@ -17,4 +17,6 @@ main: ; Início da função main
     MOV [soma], EAX ; Armazena o resultado da soma na variável soma. DESTINO, ORIGEM
     SUB EAX , ECX ; Subtrai o valor de EAX com o valor de ECX. soma = soma - num3.
     MOV [subtracao], EAX ; Armazena o resultado da subtração na variável subtracao.
+    MOV EAX, 0; // Prepara o EAX para retornar ao Kernel
+    ; O EAX é usado para retornar valores ao Kernel, nesse caso, 0 indica sucesso.
     RET ; Retorna para o Kernel
