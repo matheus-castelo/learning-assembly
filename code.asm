@@ -13,7 +13,6 @@ main: ; Início da função main
     MOV EAX, [num1] ; Movendo da memória para o registrador
     MOV EBX, [num2] ; Movendo da memória para o registrador
     MOV ECX, [num3] ;  Movendo da memória para o registrador
-    MOV EAX, 0 ; Retorna o valor de EAX
     ADD EAX, EBX ; Soma o valor de EAX com o valor de EBX. num1 = num1 + num2
     MOV [soma], EAX ; Armazena o resultado da soma na variável soma. DESTINO, ORIGEM
     SUB EAX , ECX ; Subtrai o valor de EAX com o valor de ECX. soma = soma - num3.
